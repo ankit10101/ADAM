@@ -1,0 +1,25 @@
+[project]
+name = "adam"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bedrock-agentcore>=0.1.7",
+    "bedrock-agentcore-starter-toolkit>=0.1.23",
+    "blinker==1.7.0",
+    "boto3>=1.40.50",
+    "crewai>=0.86.0",
+    "google-analytics-data>=0.18.19",
+    "google-api-python-client>=2.184.0",
+    "pandas>=2.3.3",
+    "selenium>=4.36.0",
+    "selenium-wire>=5.1.0",
+    "setuptools>=80.9.0",
+    "streamlit>=1.50.0",
+    "webdriver-manager>=4.0.2",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["adam"]

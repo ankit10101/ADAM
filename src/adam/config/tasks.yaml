@@ -1,0 +1,8 @@
+web_analytics_automation_task:
+  description: >
+    Handle user request {user_query} related to digital analytics,
+    such as running JS code on a page, fetching network requests,
+    creating GA4 tags, or running GA4 reports.
+  expected_output: >
+    Structured, step-by-step response confirming task completion.
+  agent: adam

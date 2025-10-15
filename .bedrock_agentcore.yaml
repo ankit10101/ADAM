@@ -1,0 +1,41 @@
+default_agent: adam
+agents:
+  adam:
+    name: adam
+    entrypoint: C:/Users/ANKIT/Desktop/adam/src/adam/crew.py
+    platform: linux/arm64
+    container_runtime: docker
+    source_path: null
+    aws:
+      execution_role: arn:aws:iam::501931553097:role/AmazonBedrockAgentCoreSDKRuntime-ap-south-1-a1d3f8abef
+      execution_role_auto_create: false
+      account: '501931553097'
+      region: ap-south-1
+      ecr_repository: 501931553097.dkr.ecr.ap-south-1.amazonaws.com/bedrock-agentcore-adam
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: adam-PLkNRwHAth
+      agent_arn: arn:aws:bedrock-agentcore:ap-south-1:501931553097:runtime/ADAM-7WvPHfC2eT
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-adam-builder
+      execution_role: arn:aws:iam::501931553097:role/AmazonBedrockAgentCoreSDKCodeBuild-ap-south-1-a1d3f8abef
+      source_bucket: bedrock-agentcore-codebuild-sources-501931553097-ap-south-1
+    memory:
+      mode: STM_ONLY
+      memory_id: ADAM_mem-V17IltBl6Y
+      memory_arn: arn:aws:bedrock-agentcore:ap-south-1:501931553097:memory/ADAM_mem-V17IltBl6Y
+      memory_name: ADAM_mem
+      event_expiry_days: 30
+      first_invoke_memory_check_done: false
+      was_created_by_toolkit: false
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
