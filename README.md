@@ -24,6 +24,10 @@ The project is structured around modular components for analytics automation. Ke
 - **Tools**: A set of tools for specific tasks, such as running JavaScript on web pages, fetching network requests, and creating GA4 event tags.
 - **Streamlit Application**: A user-friendly interface for interacting with ADAM, located in [`streamlit-application/app.py`](streamlit-application/app.py).
 
+### Architecture Diagram
+
+![ADAM Architecture Diagram](ADAM-Architecture%20Diagram.jpg)
+
 ## Getting Started
 
 ### Prerequisites
